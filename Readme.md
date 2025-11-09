@@ -19,7 +19,10 @@ A Cloudflared tunnel enables external access to this server.
     ./install.sh
 
 The backup script will now run at noon and midnight every day.
-6. Install Cloudflared to manage the tunneling:
+
+6. Make a copy of the config.py.example and rename it to config.py. Then adjust all the parameters in it so the sync script can send email in case of an error.
+
+7. Install Cloudflared to manage the tunneling:
 
     # Add cloudflare gpg key
     sudo mkdir -p --mode=0755 /usr/share/keyrings
@@ -31,7 +34,7 @@ The backup script will now run at noon and midnight every day.
     # install cloudflared
     sudo apt-get update && sudo apt-get install cloudflared
 
-7. Clone and install other needed services in Applications folder.
+8. Clone and install other needed services in Applications folder.
 
 ## Restoring
 
