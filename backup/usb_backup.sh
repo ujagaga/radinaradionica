@@ -10,7 +10,7 @@ LOG_FILE="/dev/shm/usb_backup.log"
 
 # Detect the directory where this script resides
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-EMAIL_SCRIPT="$SCRIPT_DIR/email.py"
+EMAIL_SCRIPT="$SCRIPT_DIR/send_mail.py"
 
 # === SCRIPT ===
 echo "[$(date)] Starting backup..." >> "$LOG_FILE"
@@ -49,3 +49,5 @@ else
   echo "$MSG" >> "$LOG_FILE"
   python3 "$EMAIL_SCRIPT" "$MSG"
 fi
+
+python3 "$EMAIL_SCRIPT" "Backup done"
