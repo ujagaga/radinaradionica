@@ -1,0 +1,6 @@
+SMTP_SERVER = "<SMTP server for your email service>"
+SMTP_PORT = 587
+SMTP_USER = "<SMTP user>"
+SMTP_PASS = "<Your email password>"
+
+SEND_TO = "<Default Admin email>"
