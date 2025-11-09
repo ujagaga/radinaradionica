@@ -28,7 +28,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Perform backup (rsync for efficiency)
-rsync -a --delete "$SRC/" "$MOUNT_POINT/backup/" >> "$LOG_FILE" 2>&1
+rsync -av --delete "$SRC/" "$MOUNT_POINT/backup/" >> "$LOG_FILE" 2>&1
 RESULT=$?
 
 # Sync and unmount
