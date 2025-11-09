@@ -7,7 +7,7 @@
 SRC="/home/rada/Applications"           # folder to back up
 LABEL="Backup"                # USB drive label
 MOUNT_POINT="/mnt/usbbackup"
-LOG_FILE="/dev/shm/backup/usb_backup.log"
+LOG_FILE="/dev/shm/usb_backup.log"
 
 # === SCRIPT ===
 echo "[$(date)] Starting backup..." >> "$LOG_FILE"
