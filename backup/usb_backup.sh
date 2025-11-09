@@ -50,4 +50,3 @@ else
   python3 "$EMAIL_SCRIPT" "$MSG"
 fi
 
-python3 "$EMAIL_SCRIPT" "Backup done"
